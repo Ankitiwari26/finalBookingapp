@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Watching Experience</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Movie Watching Experience</h1>
+
+    <div id="movieDetails" class="details-container">
+      <!-- Sample user details with edit and delete icons -->
+      <div class="user-detail" data-user-id="1">
+        <span id="customerName">John Doe</span>
+        <span id="movieName">Inception</span>
+        <span id="showTiming">8:00 PM</span>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+      </div>
+      <!-- Add more user details as needed -->
+    </div>
+
+    <!-- Form for editing user details -->
+    <form id="editForm" style="display: none;">
+      <label for="editCustomerName">Customer Name:</label>
+      <input type="text" id="editCustomerName" required>
+      <label for="editMovieName">Movie Name:</label>
+      <input type="text" id="editMovieName" required>
+      <label for="editShowTiming">Show Timing:</label>
+      <input type="text" id="editShowTiming" required>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+  </div>
+
+</body>
+</html>
